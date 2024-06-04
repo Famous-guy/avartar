@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Error</title>
+</head>
+<body>
+<pre>TypeError: Cannot read properties of undefined (reading &#39;properties&#39;)<br> &nbsp; &nbsp;at properties (/Users/mot/Documents/avatar-generator/node_modules/@dicebear/avatars/dist/index.js:1033:17)<br> &nbsp; &nbsp;at defaults (/Users/mot/Documents/avatar-generator/node_modules/@dicebear/avatars/dist/index.js:1037:15)<br> &nbsp; &nbsp;at merge (/Users/mot/Documents/avatar-generator/node_modules/@dicebear/avatars/dist/index.js:1144:26)<br> &nbsp; &nbsp;at createAvatar (/Users/mot/Documents/avatar-generator/node_modules/@dicebear/avatars/dist/index.js:1475:13)<br> &nbsp; &nbsp;at /Users/mot/Documents/avatar-generator/index.js:26:17<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/mot/Documents/avatar-generator/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at next (/Users/mot/Documents/avatar-generator/node_modules/express/lib/router/route.js:149:13)<br> &nbsp; &nbsp;at Route.dispatch (/Users/mot/Documents/avatar-generator/node_modules/express/lib/router/route.js:119:3)<br> &nbsp; &nbsp;at Layer.handle [as handle_request] (/Users/mot/Documents/avatar-generator/node_modules/express/lib/router/layer.js:95:5)<br> &nbsp; &nbsp;at /Users/mot/Documents/avatar-generator/node_modules/express/lib/router/index.js:284:15</pre>
+</body>
+</html>

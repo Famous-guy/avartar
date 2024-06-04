@@ -1,0 +1,19 @@
+{
+  "name": "avatar-generator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dicebear/avatars": "^4.10.8",
+    "@dicebear/avatars-initials-sprites": "^4.10.8",
+    "avatar-initials": "^6.0.0",
+    "express": "^4.19.2",
+    "gender-detection": "^0.1.0"
+  }
+}
