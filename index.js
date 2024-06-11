@@ -9,7 +9,7 @@ const port = 3000;
 app.use('/avatars', express.static(path.join(__dirname, 'avatars')));
 
 // Endpoint to generate avatar based on name and gender
-app.get('/avatar/:gender/:ame', (req, res) => {
+app.get('/avatar/:gender/:name', (req, res) => {
     const gender = req.params.gender;
     const name = req.params.name;
 
