@@ -42,6 +42,11 @@ app.get('/avatar/:gender/:name', (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.send('Contest App');
+});
+
+
 // Start the server
 app.listen(port, () => {
     console.log(`Server is listening at http://localhost:${port}`);
