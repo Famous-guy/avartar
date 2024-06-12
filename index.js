@@ -8,6 +8,31 @@ const port = 3000;
 // Serve static files (avatar images)
 app.use('/avatars', express.static(path.join(__dirname, 'avatars')));
 
+//base endpoint
+app.get('/', (req, res) => {
+    res.send('Contest App');
+});
+
+app.get('/avatar/:name', (req, res) => {
+    const name = req.params.name;
+    let genderFolder = 'both';
+    const avatarFolder = path.join(__dirname, 'avatars', genderFolder);
+    fs.readdir(avatarFolder, (err, files) => {
+        if (err) {
+            // Handle error
+            console.error('Error reading avatar folder:', err);
+            return res.status(500).send('Internal Server Error');
+        }
+
+        // Select a random avatar image file
+        const randomIndex = Math.floor(Math.random() * files.length);
+        const randomAvatar = files[randomIndex];
+
+        // Send the selected avatar as a response
+        res.set('Content-Type', 'image/svg+xml');
+        res.sendFile(path.join(avatarFolder, randomAvatar));
+    });
+});
 // Endpoint to generate avatar based on name and gender
 app.get('/avatar/:gender/:name', (req, res) => {
     const gender = req.params.gender;
@@ -40,10 +65,6 @@ app.get('/avatar/:gender/:name', (req, res) => {
         res.set('Content-Type', 'image/svg+xml');
         res.sendFile(path.join(avatarFolder, randomAvatar));
     });
-});
-
-app.get('/', (req, res) => {
-    res.send('Contest App');
 });
 
 
