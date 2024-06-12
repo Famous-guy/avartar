@@ -14,7 +14,9 @@
     "@dicebear/avatars-initials-sprites": "^4.10.8",
     "avatar-initials": "^6.0.0",
     "express": "^4.19.2",
-    "gender-detection": "^0.1.0",
+    "gender-detection": "^0.1.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.3"
   }
 }
