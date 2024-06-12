@@ -12,7 +12,7 @@ app.use('/avatars', express.static(path.join(__dirname, 'avatars')));
 app.get('/', (req, res) => {
     res.send('Contest App');
 });
-
+// Endpoint to generate avatar based on name
 app.get('/avatar/:name', (req, res) => {
     const name = req.params.name;
     let genderFolder = 'both';
